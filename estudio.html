@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<title>"Calculadora"</title>
+<body>
+    <h1>Bienvenid@</h1>
+    <form id = "preguntas" name=""  method="post"> 
+<label for="pnumero">ingrese el primer numero</label>
+    <input type="number" name="" id="pnumero">
+    
+<br>
+<label for="snumero">ingrese el segundo numero </label>
+    <input type="number" name=""  id="snumero">
+    <button onclick="limpiar();">limpiar todo</button>
+<br>
+<button type="button" onclick="sumar();">sumar</button>
+<button type="button" onclick="restar();">restar</button>
+<button type="button" onclick="multiplicar();">multiplicar</button>
+<button type="button" onclick="dividir();">dividir</button>
+<br>
+</form>
+</body>
+<script>
+function limpiar() {
+    document.getElementById('preguntas').reset();// limpiar campos
+    
+}
+
+    function sumar(){
+        var x =parseInt(document.getElementById('pnumero').value);
+        var y =parseInt(document.getElementById('snumero').value);
+        alert(x+y);
+
+
+    }
+    function restar(){
+        var x =parseInt(document.getElementById('pnumero').value);
+        var y =parseInt(document.getElementById('snumero').value);
+        alert(x-y); 
+    }
+
+    function multiplicar(){
+        var x =parseInt(document.getElementById('pnumero').value);
+        var y =parseInt(document.getElementById('snumero').value);
+        alert(x*y);
+    }
+
+    function dividir(){
+        var x =parseInt(document.getElementById('pnumero').value);
+        var y =parseInt(document.getElementById('snumero').value);
+        alert(x/y);
+    }
+
+
+</script>
+</html>
